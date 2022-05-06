@@ -1,0 +1,152 @@
+body {
+  position: relative;
+}
+
+canvas {
+  image-rendering: pixelated;
+  border: 1px solid black;
+}
+
+/* Drawing */
+.drawing {
+  width: 300px;
+  height: 300px;
+}
+
+.drawing-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear-drawing {
+  margin-right: 10px;
+}
+
+/* Graph */
+.graph {
+	margin-left: 20px;
+
+	width: 500px;
+	height: 200px;
+}
+
+/* Network */
+.network {
+  border: 1px solid black;
+
+  margin-top: 10px;
+  padding: 20px;
+
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  height: 500px;
+}
+
+.activator-container,
+.convolver-container,
+.flattener-container,
+.full-connecter-container,
+.pooler-container,
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  padding-top: 20px;
+
+  position: relative;
+}
+
+.activator-output,
+.convolver-output,
+.pooler-output,
+.input {
+  width: 100px;
+  height: 100px;
+}
+
+/* Flattener + FullConnecter */
+.flattener-container,
+.full-connecter-container {
+  height: 100%;
+}
+
+.flattener-output,
+.full-connecter-output {
+  width: 20px;
+  height: 100%;
+
+  margin: 0 40px;
+}
+
+.flattener-container::after {
+  content: "Flattener";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.full-connecter-container::after {
+  content: "Full Connecter";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* Convolver */
+.convolver-container::after {
+  content: "Convolver";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* Activator */
+.activator-container::after {
+  content: "Activator";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* Pooler */
+.pooler-container::after {
+  content: "Pooler";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* Network input */
+.input-container::after {
+  content: "Network input";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
